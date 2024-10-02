@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>password generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+
+    <div class="container">
+        <div class="card">
+            <h1>Password Generator</h1>
+            <div class="inputBox">
+                <input type="text" class="passBox" id="passBox" disabled>
+                <span class="material-symbols-outlined copy-icon" id="copyBtn">
+                    content_copy
+                </span>
+            </div>
+            
+
+            <div class="rangeContainer">
+                <input type="range" min="5" max="30" value="8" class="rangeSlider" id="inputSlider">
+                
+            </div>
+    
+            <div class="row">
+                <p>Password Length</p>
+                <span id="sliderValue"></span>
+            </div>
+    
+            <!-- Checkbox options -->
+            <div class="points">
+                <input type="checkbox" name="lowercase" id="lowercase" checked/>
+                <label for="lowercase">Include lowercase letters (a-z)</label>
+            </div>
+            <div class="points">
+                <input type="checkbox" name="uppercase" id="uppercase" checked/>
+                <label for="uppercase">Include uppercase letters (A-Z)</label>
+            </div>
+            <div class="points">
+                <input type="checkbox" name="numbers" id="numbers" checked/>
+                <label for="numbers">Include numbers (0-9)</label>
+            </div>
+            <div class="points">
+                <input type="checkbox" name="symbols" id="symbols" checked/>
+                <label for="symbols">Include symbols (@-*)</label>
+            </div>
+        
+        <button type="button" class="genBtn" id="genBtn"> Generated Password</button>
+    </div>
+</div>
+
+    
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
